@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/to/font-awesome/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>    -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+    <link rel="stylesheet" href="./styles.css" />
+       
+    
+
+
+    <title>Anitech Portfolio</title>
+</head>
+
+
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Anitech</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="services.html" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT <span></span></a>
+                    </li>
+
+                </ul>
+                <!-- ACCOUNT MODAL -->
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-user-circle"></i> Account
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- SET-UP ACCOUNT MODAL COMPONENT ELEMENT -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"><i class="fa fa-user-circle"></i> Account</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Enter password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> <small class="text-muted">Remember
+                                                me</small></label>
+                                    </div>
+                                    <input type="submit" value="Sign In" class="btn btn-info btn-block btn-md">
+                                    <p class="text-center m-2">Not a member? <a class="text-info" href="#">Register</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-outline-dark btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- ABOUT HEADER -->
+    <header id="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col md-6 m-auto text-center">
+                    <h1>SHOP INDUSTRIAL INSTRUMENTS & SUPPLIES</h1>
+                    <p class="lead d-none d-sm-block">Committed To Quality. Committed To You.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    
+    <section id="about" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>About us</h3>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus consequatur aut, expedita veniam quae error? Ex cum, nisi, 
+                        minima quisquam dolorem nulla modi aspernatur beatae aliquid animi accusamus voluptas!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis velit ea amet,ullam totam nulla id itaque eum accusantium ratione doloribus minima. 
+                        Beatae aliquid id rerum obcaecati eum? Rerum corrupti eaque, cum vitae fugiat error, consectetur, quia quos fuga praesentium amet molestiae veniam voluptas beatae ipsum.</p>
+                    <a href="index.html" class="btn btn-outline-danger text-danger mb-2">Learn More</a>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img src="./img/background_images/slc (2).jpg" class="img-fluid border border-dark" alt="Salt Lake City,UT"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+<section id="testimonials" class="p-4 text-light">
+    <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row text-center">
+            <div class="col">
+                <div class="slider">
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, earum.</p>
+                            <footer class="blockquote-footer text-light">From John Doe
+                                <cite title="company 1">Company 1</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, earum.</p>
+                            <footer class="blockquote-footer text-light">From Anne Doe
+                                <cite title="company 1">Company 2</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, earum.</p>
+                            <footer class="blockquote-footer text-light">From Allie Williams
+                                 <cite title="company 1">Company 3</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ABOUT-ICON -->
+    <div class="p-5" id="about-icons">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-3x"></i>
+                            <h3>LOREM</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloremque.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-3x"></i>
+                            <h3>LOREM</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloremque.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-3x"></i>
+                            <h3>LOREM</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloremque.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-3x"></i>
+                            <h3>LOREM</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloremque.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-3x"></i>
+                            <h3>LOREM</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloremque.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-3x"></i>
+                            <h3>LOREM</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloremque.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ABOUT FOOTER SECTION  -->
+   <footer class="site-footer-about">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-6 align-self-center mt-5">
+                    <h5></h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+
+                <!-- Bootstrap grid -->
+                <div class="col-6 text-right align-self-center">
+                    <a role="button" class="btn btn-link text-light" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-435-200-7688</a><br />
+                    <a role="button" class="btn btn-link text-light" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> anikthomas.tech</a>
+                </div>
+            </div> 
+            <div class="col mb-0 text-center">
+                <small class="text-light">Copyright &copy;<span id="year"></span>Anitech</small>
+            </div>  
+        </div>
+    </footer> -->
+ -->
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+
+        
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            slideToShow: 1,
+            slideToScroll: 1
+        });
+    </script>
+</body>
+
+</html>

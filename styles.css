@@ -1,0 +1,130 @@
+/* HOME PAGE */
+.navbar .nav-link{
+    font-size: 14px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.navbar .nav-item.active{
+    border-left: #444 3px solid;
+}
+.carousel-item{
+    height: 450px;
+}
+.carousel-image-1{
+    background: url('./img/background_images/bearing.jpg');
+    background-size:cover;
+    /* background-position: center; */
+    
+    
+}
+.carousel-image-2{
+    background: url('./img/services.jpg');
+    background-size:cover;
+    background-position: center;
+}
+.carousel-image-3{
+    background: url('./img/background_images/Dark_office.jpg');
+    background-size:cover;
+    background-position: center;
+    
+    
+}
+.display-3,.lead{
+    background: rgba(0,0,0,0.4);
+    
+    
+}
+#home-heading{
+    position: relative;
+    min-height: 200px;
+    background:url('./img/red.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align:center;
+    color:#fff;
+}
+.dark-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+}
+#home-heading2{
+    position: relative;
+    min-height: 200px;
+    background:url('./img/background_images/sobhan-joodi-DwxrSXl1S60-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align:center;
+    color:#fff;
+}
+.site-footer {
+    background:url('./img/services.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:#fff;    
+}
+
+/* ABOUT PAGE */
+#page-header{
+    height: 300px;
+    background: url('./img/we\ serve.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top:70px;
+}
+#about-icons{
+    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 1px #eee solid;  
+}
+
+#testimonials{
+    background:url('./img/background_images/bruno-adamo-WBYKlk-awg0-unsplash.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    color:#fff;  
+}
+.site-footer-about {
+    background:#080204;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    color:#fff;    
+}
+
+/* SERVICES */
+.site-footer-services {
+    background:url('./img/services.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    color:#fff;    
+}
+/* PRODUCTS */
+
+/* CONTACT */
+.site-footer-contact{
+    background:url('./img/we\ serve.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    color:#fff;    
+}
