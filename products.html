@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="./styles.css" />
        
     
-
-
     <title>Anitech Portfolio</title>
 </head>
 
@@ -110,17 +108,37 @@
     <div class="container">
         <div class="row">
             <div class="col md-6 m-auto">
-                <h1>PRODUCTS</h1>
+                <h1>PRODUCTS AND BRANDS</h1>
                 <p class="lead d-none d-sm-block">Committed To Quality. Committed To You.</p>
             </div>
         </div>
     </div>
 </header>
 
+<!-- BRANDS SECTION SLIDER SECTION-->
+<section id="logo-products" class="py-3">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col mb-5">
+                <h1 class="text-center mb-5">BRANDS</h1>
+                <div class="logo-area slider">
+                    <div class="slide text-center mt-3"><img src="./img/Brands/Abb.jpg" alt="Abb"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/fisher.png" alt="Fisher"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/keystone.png" alt="Keystone"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/masoneilan.png" alt="Masoneilan"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/rosemount.png" alt="Rosemount"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/ultraflo.png" alt="Ultraflo"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/valtex.png" alt="Valtex"/></div>
+                </div>
+            </div>
+      </div>
+    </div>
+</section>
+
 <!-- PRODUCTS PHOTO GALLERY -->
 <section id="gallery" class="py-5">
     <div class="container">
-        <h1 class="text-center">Our Products</h1>
+        <h1 class="text-center">OUR PRODUCTS</h1>
         <p class="text-center">Check out our Products</p>
           <div class="row mb-4">
               <div class="card col-md-3">
@@ -174,52 +192,8 @@
     </div>
 </section>
 
- <!-- BRANDS SECTION -->
- <div class="container">
-     <h1 class="text-center mb-5">Our Brands</h1>
-    <div class="card-columns">
-        <div class="card p-2">
-            <img src="./img/Brands/Abb.jpg" alt="Fisher" class="card-img-top img-fluid">
-            <div class="card-body text-center">
-            </div>
-        </div>
-        <div class="card p-2">
-            <img src="./img/Brands/fisher.png" alt="Fisher" class="card-img-top img-fluid">
-            <div class="card-body text-center">
-            </div>
-        </div>
-        <div class="card p-2 mb-2">
-            <img src="./img/Brands/keystone.png" alt="Keystone" class="card-img-top img-fluid">
-            <div class="card-body text-center">
-                
-            </div>
-        </div>
-        <div class="card p-2">
-            <img src="./img/Brands/masoneilan.png" alt="Masoneilan" class="card-img-top img-fluid">
-            <div class="card-body text-center">
-               
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img/Brands/rosemount.png" alt="Rosemount" class="card-img-top img-fluid">
-            <div class="card-body text-center">
-              
-            </div>
-        </div>
-        <div class="card p-2">
-            <img src="./img/Brands/ultraflo.png" alt="Ultraflo" class="card-img-top img-fluid">
-            <div class="card-body text-center">
-                
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img/Brands/valtex.png" alt="Fisher" class="card-img-top img-fluid">
-            <div class="card-body text-center">
-               
-            </div>
-        </div>
-    </div>
-</div>
+ 
+ 
 
 <!-- FOOTER PRODUCTS SECTION -->
 <footer class="site-footer">
@@ -252,9 +226,39 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     
 
+    <script>
+        $('.carousel').carousel({
+            interval: 4000,
+            pause: 'hover'
+        });
 
+        $(document).ready(function(){
+            $('.logo-area').slick({
+                slidesToShow: 6,
+                slidesToscroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        })
+        
+    </script>
       
 </body>
 
