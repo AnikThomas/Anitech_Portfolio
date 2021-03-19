@@ -4,9 +4,8 @@ $('.carousel').carousel({
     pause: 'hover'
     });
 
-// Featured products slick on home page
-$(document).ready(function(){
-    $('.logo-area-products').slick({
+const getSlick = (thingToSlick) => {
+    return thingToSlick.slick({
         slidesToShow: 6,
         slidesToscroll: 1,
         autoplay: true,
@@ -26,6 +25,10 @@ $(document).ready(function(){
             }
         }]
     });
+}
+// Featured products slick on home page
+$(document).ready(function(){
+    getSlick($('.logo-area-products'))
  });
 
  // testimonial about page
@@ -37,50 +40,12 @@ $('.slider-testimonials').slick({
 
 // PRODUCTS SLICK
 $(document).ready(function(){
-    $('.logo-area2').slick({
-        slidesToShow: 6,
-        slidesToscroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 4
-                 }
-               }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 3
-                     }
-                }]
-        });
+   getSlick($('.logo-area2'))
     });
     
 // SLICK LISTS OF PRODUCTS BRANDS 
 $(document).ready(function(){
-    $('.logo-area-lists').slick({
-        slidesToShow: 6,
-        slidesToscroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
+    getSlick($('.logo-area-lists'))
 });
 
 
