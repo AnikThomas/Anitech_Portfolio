@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/to/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"/>
+   
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Anitech Portfolio</title>
+
+</head>
+
+
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Anitech</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="./products.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">PRODUCTS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="./products_lists.html" class="dropdown-item">List Of Products</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./products.html" class="dropdown-item">Back to Products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                <!-- ACCOUNT MODAL -->
+                <div class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-user-circle fa-2x"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- SET-UP ACCOUNT MODAL COMPONENT ELEMENT -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"><i class="fa fa-user-circle"></i> Account</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Enter password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> <small class="text-muted">Remember
+                                                me</small></label>
+                                    </div>
+                                    <input type="submit" value="Sign In" class="btn btn-info btn-block btn-md">
+                                    <p class="text-center m-2">Not a member? <a class="text-info" href="#">Register</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-outline-dark btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   <!-- PRODUCTS HEADER -->
+   <header id="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col md-6 m-auto">
+                <h1 class="display-4 d-sm-block text-center">SHOP ONLINE!</h1>
+                <p class="lead d-sm-block text-center">OR CONTACT US TODAY!</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- BRANDS SECTION SLIDER SECTION-->
+<section id="logo-products" class="py-3">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col mb-5">
+                <div class="logo-area slider">
+                    <div class="slide text-center mt-3"><img src="./img/Brands/Abb.jpg" alt="Abb"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/fisher.png" alt="Fisher"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/keystone.png" alt="Keystone"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/masoneilan.png" alt="Masoneilan"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/rosemount.png" alt="Rosemount"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/ultraflo.png" alt="Ultraflo"/></div>
+                    <div class="slide text-center mt-3"><img src="./img/Brands/valtex.png" alt="Valtex"/></div>
+                </div>
+            </div>
+      </div>
+    </div>
+</section>
+
+    <!-- BUILD TABS SECTION -->
+    <div class="container">
+    <div class="col-md-10">
+        <h3 class="display-4 mb-3">LIST OF PRODUCTS</h3>
+        <!-- nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#valve" data-togggle="tab" class="nav-link active">Valve & Parts</a></li>
+            <li class="nav-item"><a href="#actuator" data-togggle="tab" class="nav-link">Actuator</a></li>
+            <li class="nav-item"><a href="#regulator" data-togggle="tab" class="nav-link">Regulator</a></li>
+            <li class="nav-item"><a href="#instruments" data-togggle="tab" class="nav-link">Instruments</a></li>
+        </ul>
+
+
+        <!-- tab content -->
+        <div class="tab-content">
+            <div id="valve" class="tab-pane active">
+                <div class="col-md-12 py-5">
+                    <h1 class="display-5 mb-2">VALVE & PARTS</h1>
+                    <div class="row mb-4 mt-2">
+                        <div class="col-md-3 text-center">
+                                <div class="card">
+                                    <img src="./img/PRODUCTS/Cage Adaptor Fisher 1u230224492.jpeg" alt="Cage Adaptor Fisher" class="img-fluid"/>
+                                    <p class="lead card-title">Cage</p>
+                                    <p class="card-text text-danger">$1200.00</br><small class="text-muted">PN: #547754</small></p>
+                                    <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                                </div>
+                        </div>
+                    
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/valve-seat-ring-500x500.jpg" alt="Seat Ring Retainer Fisher" class="img-fluid"/>
+                                <p class="lead card-title">Seat Ring</p>
+                                <p class="card-text text-danger">$500.45 </br><small class="text-muted">PN: #32274</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/TRIM SET.jpg" alt="Trim Set" class="img-fluid"/>
+                                <p class="lead card-title">Trim Set</p>
+                                <p class="card-text text-danger">$1500.00 </br><small class="text-muted">PN: #43754</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/gasket set.jpg" alt="Gasket Set" class="img-fluid"/>
+                                <p class="lead card-title">Gasket Set</p>
+                                <p class="card-text text-danger">$250.90 </br><small class="text-muted">PN:#08724</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Link.jpeg" alt="Link" class="img-fluid"/>
+                                <p class="lead card-title">Link</p>
+                                <p class="card-text text-danger">$150.00 </br><small class="text-muted">PN:#65762</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Lantern ring.jpeg" alt="Lantern ring" class="img-fluid"/>
+                                <p class="lead card-title">Lantern Ring</p>
+                                <p class="card-text text-danger">$325.50 </br><small class="text-muted">PN:#65412</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Packing.jpeg" alt="Packing" class="img-fluid"/>
+                                <p class="lead card-title">Packing</p>
+                                <p class="card-text text-danger">$125.00</br><small class="text-muted">PN:#65712</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Repair kit.jpg" alt="Repair Kit" class="img-fluid"/>
+                                <p class="lead card-title">Repair kit</p>
+                                <p class="card-text text-danger">$265.60</br><small class="text-muted">PN:#67442</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Ball valve .jpeg" alt="Ball Valve" class="img-fluid"/>
+                                <p class="lead card-title">Ball Valve</p>
+                                <p class="card-text text-danger">$380.00</br><small class="text-muted">Type 512</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Ball valve.jpeg" alt="Ball Valve" class="img-fluid"/>
+                                <p class="lead card-title">Ball Valve</p>
+                                <p class="card-text text-danger">$410.90</br><small class="text-muted">Type 773</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Ball valveq.jpeg" alt="Ball Valve" class="img-fluid"/>
+                                <p class="lead card-title">Ball Valve</p>
+                                <p class="card-text text-danger">$600.85</br><small class="text-muted">Type 556</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/butterfly valve.jpeg" alt="Butterfly Valve" class="img-fluid"/>
+                                <p class="lead card-title">Butterfly Valve</p>
+                                <p class="card-text text-danger">$1050.00</br><small class="text-muted">Type 1334</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTUATOR TAB -->
+            <div id="actuator" class="tab-pane active">
+                <div class="col-md-12 py-5">
+                    <h1 class="display-5 mb-3">ACTUATOR & PARTS</h1>
+                    <div class="row mb-4 mt-2">
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Actuator Stem.png" alt="Actuator Stem" class="img-fluid"/>
+                                <p class="lead card-title">Actuator Stem</p>
+                                <p class="card-text text-danger">$1350.00</br><small class="text-muted">PN:#16261</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Diaphragm Actuator.jpeg" alt="Diaphragm Actuator" class="img-fluid"/>
+                                <p class="lead card-title">Diaphragm</p>
+                                <p class="card-text text-danger">$98.00</br><small class="text-muted">PN:#11263</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Diaphragm Assembly Actuator.jpeg" alt="Diaphragm Assembly" class="img-fluid"/>
+                                <p class="lead card-title">D-assembly</p>
+                                <p class="card-text text-danger">$215.00</br><small class="text-muted">PN:#43154</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Repair Kit Actuator.jpeg" alt="Gasket Set" class="img-fluid"/>
+                                <p class="lead card-title">Repair Kit</p>
+                                <p class="card-text text-danger">$421.90</br><small class="text-muted">PN:#08560</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/valve Actuator.png" alt="valve actuator" class="img-fluid"/>
+                                <p class="lead card-title">Valve Actuator</p>
+                                <p class="card-text text-danger">$2090.00</br><small class="text-muted">PN:#65412</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Stem Connector Actuator.jpeg" alt="Stem Connector" class="img-fluid"/>
+                                <p class="lead card-title">Stem Connector</p>
+                                <p class="card-text text-danger">$835.00</br><small class="text-muted">PN:#71812</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Actuator part spring.jpg" alt="Spring" class="img-fluid"/>
+                                <p class="lead card-title">Actuator Spring</p>
+                                <p class="card-text text-danger">$1845.00</br><small class="text-muted">PN:#10922</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/fisher Flanged Control.jpeg" alt="Flange Control" class="img-fluid"/>
+                                <p class="lead card-title">Flange Control</p>
+                                <p class="card-text text-danger">$2250.80</br><small class="text-muted">PN:#770981</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Taper Key.jpeg" alt="Taper Key Actuator" class="img-fluid"/>
+                                <p class="lead card-title">Taper Key</p>
+                                <p class="card-text text-danger">$223.90</br><small class="text-muted">PN:#33397</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regulator Tab -->
+            <div id="regulator" class="tab-pane active">
+                <div class="col-md-12 py-5">
+                    <h1 class="display-5 mb-3">REGULATOR & PARTS</h1>
+                    <div class="row mb-4 mt-2">
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Phymetrix pressure regulator.jpeg" alt="Phymetrix pressure" class="img-fluid"/>
+                                <p class="lead card-title">Phymetrix</p>
+                                <p class="card-text text-danger">$932.90</br><small class="text-muted">PN:#162547</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Pressure Regulator.jpeg" alt="Pressure Regulator" class="img-fluid"/>
+                                <p class="lead card-title">Pressure</p>
+                                <p class="card-text text-danger">$1232.95</br><small class="text-muted">PN:#110831</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Regulator high pressure.jpeg" alt="Regulator high pressure" class="img-fluid"/>
+                                <p class="lead card-title">High pressure</p>
+                                <p class="card-text text-danger">$792.80</br><small class="text-muted">PN:#48862</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/second stage regulator.jpeg" alt="second stage regulator" class="img-fluid"/>
+                                <p class="lead card-title">Stage regulator</p>
+                                <p class="card-text text-danger">$992.25</br><small class="text-muted">PN:#441270</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/  Regulator 67CFR-239.jpeg" alt="Regulator CFR" class="img-fluid"/>
+                                <p class="lead card-title">Regulator CFR</p>
+                                <p class="card-text text-danger">$838.95</br><small class="text-muted">PN:#445031</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Air filter regulator.jpeg" alt="Air filter regulator" class="img-fluid"/>
+                                <p class="lead card-title">Air filter</p>
+                                <p class="card-text text-danger">$322.45</br><small class="text-muted">PN:#441718</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Instruments tab -->
+            <div id="instruments" class="tab-pane active">
+                <div class="col-md-12 py-5">
+                    <h1 class="display-5 mb-3">INSTRUMENTS & PARTS</h1>
+                    <div class="row mb-4 mt-2">
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/calibrator multifuntion instrument.jpeg" alt="calibrator multifuntion" class="img-fluid"/>
+                                <p class="lead card-title">Calibrator</p>
+                                <p class="card-text text-danger">$2235.00</br><small class="text-muted">PN:#661718</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Dew Point monitor Instrument.jpeg" alt="Dew Point monitor" class="img-fluid"/>
+                                <p class="lead card-title">Dew point monitor</p>
+                                <p class="card-text text-danger">$3015.00</br><small class="text-muted">PN:#662979</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Fox termal instrument.jpeg" alt="Fox termal" class="img-fluid"/>
+                                <p class="lead card-title">Fox termal</p>
+                                <p class="card-text text-danger">$1200.50</br><small class="text-muted">PN:#661332</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card">
+                                <img src="./img/PRODUCTS/Greyline-pdfm50 Instrument.jpeg" alt="Greyline Instrument" class="img-fluid"/>
+                                <p class="lead card-title">Greyline Instrument</p>
+                                <p class="card-text text-danger">$885.00</br><small class="text-muted">PN:#665602</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Instrument.jpg" alt="Fisher Instrument" class="img-fluid"/>
+                                <p class="lead card-title">Fisher Instrument</p>
+                                <p class="card-text text-danger">$2857.00</br><small class="text-muted">PN:#665402</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/King-7750 Instrument.jpeg" alt="King-77520" class="img-fluid"/>
+                                <p class="lead card-title">Instrument King</p>
+                                <p class="card-text text-danger">$2010.00</br><small class="text-muted">PN:#668872</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Level Transmitter Instrument.jpeg" alt="Transmitter Instrument" class="img-fluid"/>
+                                <p class="lead card-title">Transmitter</p>
+                                <p class="card-text text-danger">$3880.00</br><small class="text-muted">PN:#667790</small></p>
+                                <button class="btn btn-danger">Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/MRU-OPTIMA-7  instrument.jpeg" alt="MRU-Optima Instrument" class="img-fluid"/>
+                                <p class="lead card-title">MRU-Optima</p>
+                                <p class="card-text text-danger">$985.00</br><small class="text-muted">PN:#669098</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/MultiVariable transmitter.jpeg" alt="MultiVariable transmitter" class="img-fluid"/>
+                                <p class="lead card-title">MultiVariable</p>
+                                <p class="card-text text-danger">$4282.00</br><small class="text-muted">PN:#611262</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Pressure Transmitter Instrument.jpeg" alt="Pressure transmitter" class="img-fluid"/>
+                                <p class="lead card-title">Pressure transmitter</p>
+                                <p class="card-text text-danger">$3250.00</br><small class="text-muted">PN:#668172</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/rosemount flow meter instrument.jpeg" alt="Flow meter instrument" class="img-fluid"/>
+                                <p class="lead card-title">Flow meter</p>
+                                <p class="card-text text-danger">$4255.00</br><small class="text-muted">PN:#665231</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Safe Isolator Instrument.jpeg" alt="Safe Isolator instrument" class="img-fluid"/>
+                                <p class="lead card-title">Safe Isolator</p>
+                                <p class="card-text text-danger">$5625.00</br><small class="text-muted">PN:#6643102</small></p>
+                                <button class="btn btn-danger"> <i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="card mt-3">
+                                <img src="./img/PRODUCTS/Temperature transmitter Instrument.jpeg" alt="Temperature Transmitter Instrument" class="img-fluid"/>
+                                <p class="lead card-title">Temperature transmitter</p>
+                                <p class="card-text text-danger">$2260.80</br><small class="text-muted">PN:#6656028</small></p>
+                                <button class="btn btn-danger"><i class="fa fa-shopping-cart"></i> Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+    <!-- MAIN-FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-6 align-self-center mt-5">
+                    <h5></h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+
+                <!--Bootstrap grid -->
+                <div class="col-6 text-right align-self-center">
+                    <a role="button" class="btn btn-link text-light" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-435-200-7688</a><br />
+                    <a role="button" class="btn btn-link text-light" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> anikthomas.tech</a>
+                </div>
+            </div> 
+            <div class="col mb-0 text-center">
+                <small class="text-light">Copyright &copy;<span id="year"></span>Anitech 2021</small>
+            </div>  
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+   
+
+
+        
+    <script>
+        $('.carousel').carousel({
+            interval: 4000,
+            pause: 'hover'
+        });
+
+        $(document).ready(function(){
+            $('.logo-area').slick({
+                slidesToShow: 6,
+                slidesToscroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        })
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

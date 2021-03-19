@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/to/font-awesome/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet" />
-        
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,300i,400,400i,700,700i"
+        rel="stylesheet" />
+
+
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="./styles.css" />
@@ -43,21 +44,27 @@
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">ABOUT</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a href="services.html" class="nav-link">SERVICES</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="products.html" class="nav-link">PRODUCTS</a>
+                    <li class="nav-item dropdown">
+                        <a href="./products.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">PRODUCTS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="./products.html" class="dropdown-item">Products</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./products_lists.html" class="dropdown-item">List Of Products</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">CONTACT <span></span></a>
+                        <a href="contact.html" class="nav-link">CONTACT</a>
                     </li>
                 </ul>
 
                 <!-- ACCOUNT MODAL -->
                 <span class="navbar-text ml-auto">
                     <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-user-circle"></i> Account
+                        <i class="fa fa-user-circle fa-2x"></i>
                     </a>
                 </span>
             </div>
@@ -113,8 +120,8 @@
         <div class="container">
             <div class="row">
                 <div class="col md-6 m-auto text-center">
-                    <h1 class="text-left">OUR SERVICES</h1>
-                    <p class="lead d-none d-sm-block text-left">"Were Customer Satisfaction Matters"</p>
+                    <h1 class="text-left display-3">OUR SERVICES</h1>
+                    <p class="lead d-none d-sm-block text-left text-uppercase">"Were Customer Satisfaction Matters"</p>
                 </div>
             </div>
         </div>
@@ -126,7 +133,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center my-4">SERVICES</h1>
+                    <h1 class="text-center my-4 display-4">SERVICES</h1>
                     <p class="lead bg-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, hic!</p>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus
                         consequatur aut, expedita veniam quae error? Ex cum, nisi,
@@ -212,7 +219,7 @@
 
     </div>
 
-  
+
     <!-- ABOUT FOOTER SECTION  -->
     <footer class="site-footer-services">
         <div class="container py-4">
@@ -238,7 +245,7 @@
                 </div>
             </div>
             <div class="col mb-0 text-center">
-                <small class="text-light">Copyright &copy;<span id="year"></span>Anitech</small>
+                <small class="text-light">Copyright &copy;<span id="year"></span>Anitech 2021</small>
             </div>
         </div>
     </footer>
@@ -252,7 +259,7 @@
 
 
 
-   
+
 </body>
 
 </html>

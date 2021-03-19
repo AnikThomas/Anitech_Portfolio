@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"/>
     <link rel="stylesheet" href="./styles.css" />
        
+
+    
     
     <title>Anitech Portfolio</title>
 </head>
@@ -35,24 +37,30 @@
                     <li class="nav-item active">
                         <a href="index.html" class="nav-link">HOME</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="about.html" class="nav-link">ABOUT</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="services.html" class="nav-link">SERVICES</a>
                     </li>
-                    <li class="nav-item active">
-                        <a href="products.html" class="nav-link">PRODUCTS</a>
+                    <li class="nav-item dropdown">
+                        <a href="./products.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">PRODUCTS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="./products_lists.html" class="dropdown-item">List Of Products</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./products.html" class="dropdown-item">Back to Products</a>
+                        </div>
                     </li>
-                    <li class="nav-item active">
-                        <a href="contact.html" class="nav-link">CONTACT <span></span></a>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
                     </li>
                 </ul>
                 
                 <!-- ACCOUNT MODAL -->
                 <span class="navbar-text ml-auto">
                     <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-user-circle"></i> Account
+                        <i class="fa fa-user-circle fa-2x"></i>  
                     </a>
                 </span>
             </div>
@@ -102,14 +110,14 @@
         </div>
     </div>
 
-    
+
    <!-- PRODUCTS HEADER -->
    <header id="page-header">
     <div class="container">
         <div class="row">
             <div class="col md-6 m-auto">
-                <h1>PRODUCTS AND BRANDS</h1>
-                <p class="lead d-none d-sm-block">Committed To Quality. Committed To You.</p>
+                <h1 class="display-3">PRODUCTS AND BRANDS</h1>
+                <p class="lead d-none d-sm-block text-uppercase">Committed To Quality, Committed To You.</p>
             </div>
         </div>
     </div>
@@ -120,7 +128,7 @@
     <div class="container pt-4">
         <div class="row">
             <div class="col mb-5">
-                <h1 class="text-center mb-5">BRANDS</h1>
+                <h1 class="text-center mb-5 display-4">BRANDS</h1>
                 <div class="logo-area slider">
                     <div class="slide text-center mt-3"><img src="./img/Brands/Abb.jpg" alt="Abb"/></div>
                     <div class="slide text-center mt-3"><img src="./img/Brands/fisher.png" alt="Fisher"/></div>
@@ -138,62 +146,74 @@
 <!-- PRODUCTS PHOTO GALLERY -->
 <section id="gallery" class="py-5">
     <div class="container">
-        <h1 class="text-center">OUR PRODUCTS</h1>
-        <p class="text-center">Check out our Products</p>
+        <h1 class="display-4 text-center">OUR PRODUCTS</h1>
+        <p class="lead text-center text-uppercase mb-3">Check out our Products</p>
           <div class="row mb-4">
               <div class="card col-md-3">
-                  <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                    <img src="./img/PRODUCTS/TRIM SET.jpg" alt="Trim Set" class="img-fluid">
-                    <p class="text-dark text-center mb-2">Actuator Part</br><small>Trim Set,Type #37-316HF/17-4,1-1/2</small></p>    
+                  <a href="products_lists.html" class="text-decoration-none valve" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                    <img src="./img/PRODUCTS/valve-seat-ring-500x500.jpg" alt="valve seat ring" class="img-fluid">
+                    <p class="lead text-danger text-center mb-2">VALVE PARTS</p>    
               </div>
               <div class="card col-md-3">
-                <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                  <img src="./img/PRODUCTS/Instrument.jpg" alt="Instrument Part" class="img-fluid">
-                  <p class="text-dark text-center mb-2">Regulator</br><small>Fisher Type 627-8461 in.</small></br></p>
+                <a href="./products_lists.html" class="Actuator text-decoration-none" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                  <img src="./img/PRODUCTS/Stem Connector Actuator.jpeg" alt="Stem Connector Actuator" class="img-fluid">
+                  <p class="lead text-danger text-center mb-2">ACTUATOR PARTS</p>
               </a>
             </div>
             <div class="card col-md-3">
-                <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                  <img src="./img/PRODUCTS/Seat_ring_retainer.jpg" alt="Valve Seat Ring" class="img-fluid">
-                  <p class="text-dark text-center mb-2">Seat Ring Retainer</br><small>Fisher PN #26A5304X022.</small></br></p>
+                <a href="./products_lists.html" class="regulator text-decoration-none" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                  <img src="./img/PRODUCTS/Regulator high pressure.jpeg" alt="Regulator high pressure" class="img-fluid">
+                  <p class="lead text-danger text-center mb-2">REGULATOR PARTS</p>
               </a>
             </div>
             <div class="card col-md-3">
-                <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                  <img src="./img/PRODUCTS/Actuator Stem.png" alt="Actuator Stem" class="img-fluid">
-                  <p class="text-dark text-center mb-2">Actuator Stem</br><small>Fisher PN #2N131724222.</small></br></p>
+                <a href="./products_lists.html" class="regulator text-decoration-none" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                  <img src="./img/PRODUCTS/calibrator multifuntion instrument.jpeg" alt="calibrator multifuntion instrument" class="img-fluid">
+                  <p class="lead text-danger text-center mb-2">INSTRUMENTS PARTS</p>
               </a>
             </div>
             <div class="card col-md-3">
-                <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                  <img src="./img/PRODUCTS/gasket set.jpg" alt="Gasket Set" class="img-fluid">
-                  <p class="text-dark text-center mb-2">Gasket Set</br><small>Fisher PN #2N131724.</small></br></p>
+                <a href="./products_lists.html" class="regulator text-decoration-none" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                  <img src="./img/PRODUCTS/Ball valve .jpeg" alt="Ball Valve" class="img-fluid">
+                  <p class="lead text-danger text-center mb-2">BALL VALVE</p>
               </a>
             </div>
             <div class="card col-md-3">
-                <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                  <img src="./img/PRODUCTS/Repair kit.jpg" alt="Repair Kit" class="img-fluid">
-                  <p class="text-dark text-center mb-2">Repair Kit</br><small>Fisher PN #2N1317000.</small></br></p>
+                <a href="./products_lists.html" class="regulator text-decoration-none" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                  <img src="./img/PRODUCTS/Repair Kit Actuator.jpeg" alt="Reepair Kit" class="img-fluid">
+                  <p class="lead text-danger text-center mb-2">REPAIR KITS</p>
               </a>
             </div>
             <div class="card col-md-3">
-                <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                  <img src="./img/PRODUCTS/valve-seat-ring-500x500.jpg" alt="Actuator Stem" class="img-fluid">
-                  <p class="text-dark text-center mb-2">Seat Ring</br><small>Fisher PN #2N130021.</small></br></p>
+                <a href="./products_lists.html" class="regulator text-decoration-none" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                  <img src="./img/PRODUCTS/Safe Isolator Instrument.jpeg" alt="Safe Isolator" class="img-fluid">
+                  <p class="lead text-danger text-center mb-2">SAFE ISOLATOR</p>
               </a>
             </div>
             <div class="card col-md-3">
-                <a href="products.html" class="Actuator" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
-                  <img src="./img/PRODUCTS/Actuator part spring.jpg" alt="Spring" class="img-fluid">
-                  <p class="text-dark text-center mb-2">Spring</br><small>Fisher PN #2N131788876.</small></br></p>
+                <a href="./products_lists.html" class="regulator text-decoration-none" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                  <img src="./img/PRODUCTS/Fox termal instrument.jpeg" alt="Regulator high pressure" class="img-fluid">
+                  <p class="lead text-danger text-center mb-2">FOX THERMAL</p>
               </a>
             </div>
           </div>  
     </div>
 </section>
 
- 
- 
+ <!-- STAFF SECTION -->
+ <section id="explore-head" class="py-5">
+     <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-4">EXPLORE</h1>
+                    <p class="lead d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde est eveniet 
+                    ullam veniam magni explicabo aliquid doloribus cupiditate a maxime delectus fugiat 
+                    voluptatum obcaecati similique facere sed, officiis, nisi dignissimos.</p>
+                    <a href="./products_lists.html" class="btn btn btn-danger text-light btn-lg">Click For More Products</a>
+                </div>
+            </div>
+        </div>
+ </section>
 
 <!-- FOOTER PRODUCTS SECTION -->
 <footer class="site-footer">
@@ -214,7 +234,7 @@
             </div>
         </div> 
         <div class="col mb-0 text-center">
-            <small class="text-light">Copyright &copy;<span id="year"></span>Anitech</small>
+            <small class="text-light">Copyright &copy;<span id="year"></span>Anitech 2021</small>
         </div>  
     </div>
 </footer>
@@ -227,9 +247,13 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    
+ 
+
+
+     
 
     <script>
+       
         $('.carousel').carousel({
             interval: 4000,
             pause: 'hover'

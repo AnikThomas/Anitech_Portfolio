@@ -26,36 +26,41 @@
 
 
 <body>
-    <!-- Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">Anitech</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">ABOUT</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="services.html" class="nav-link">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="products.html" class="nav-link">PRODUCTS</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="contact.html" class="nav-link">CONTACT <span></span></a>
-                    </li>
-
-                </ul>
+   <!-- Navbar-->
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+       <div class="container">
+           <a href="index.html" class="navbar-brand">Anitech</a>
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto">
+                   <li class="nav-item active">
+                       <a href="index.html" class="nav-link">HOME</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="about.html" class="nav-link">ABOUT</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="services.html" class="nav-link">SERVICES</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                       <a href="./products.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                           data-toggle="dropdown">PRODUCTS</a>
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a href="./products.html" class="dropdown-item">Products</a>
+                           <div class="dropdown-divider"></div>
+                           <a href="./products_lists.html" class="dropdown-item">List Of Products</a>
+                       </div>
+                   </li>
+                   <li class="nav-item">
+                       <a href="contact.html" class="nav-link">CONTACT</a>
+                   </li>
+               </ul>
                 <!-- ACCOUNT MODAL -->
                 <span class="navbar-text ml-auto">
                     <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-user-circle"></i> Account
+                        <i class="fa fa-user-circle fa-2x"></i>
                     </a>
                 </span>
             </div>
@@ -111,8 +116,8 @@
         <div class="container">
             <div class="row">
                 <div class="col md-6 m-auto text-center">
-                    <h1 class="text-center">GET IN TOUCH</h1>
-                    <p class="lead d-none d-sm-block text-center">"We Want To Hear From You"</p>
+                    <h1 class="text-center display-3">GET IN TOUCH!</h1>
+                    <p class="lead d-none d-sm-block text-center text-uppercase">"We Want To Hear From You"</p>
                 </div>
             </div>
         </div>
@@ -128,7 +133,7 @@
                             <h2>Anitech</h2>
                             <p class="d-none d-sm-block"><em>"We Serve You Better".</em></p><br>
 
-                            <h4>HEADQUARTERS</h4>
+                            <h4>Office</h4>
                             <h6>Address:</h6>
                             <p class="mb-1">565 S Revere Dr. Suite #300</p> 
                             <p>Salt Lake City, UT 84119.</p><br>
@@ -209,7 +214,7 @@
             </div>
         </div> 
         <div class="col mb-0 text-center">
-            <small class="text-light">Copyright &copy;<span id="year"></span>Anitech</small>
+            <small class="text-light">Copyright &copy;<span id="year"></span>Anitech 2021</small>
         </div>  
     </div>
 </footer>

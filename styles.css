@@ -10,6 +10,10 @@
 .navbar .nav-item.active{
     border-left: #444 3px solid;
 }
+.nav-link:hover{
+    border-bottom: 1px solid white;
+    transition: border 0.2s;
+}
 .carousel-item{
     height: 450px;
 }
@@ -155,6 +159,10 @@
     color:#fff;    
 }
 /* PRODUCTS */
+#gallery{
+    background-color: black;
+    color:#fff;  
+}
 
 /* CONTACT */
 .site-footer-contact{
@@ -165,3 +173,4 @@
     background-size:cover;
     color:#fff;    
 }
+

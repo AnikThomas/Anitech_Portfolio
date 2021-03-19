@@ -23,6 +23,7 @@
 
 
 <body>
+
     <!-- Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
@@ -41,20 +42,22 @@
                     <li class="nav-item">
                         <a href="services.html" class="nav-link">SERVICES</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="products.html" class="nav-link">PRODUCTS</a>
+                    <li class="nav-item dropdown">
+                        <a href="./products.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">PRODUCTS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="./products.html" class="dropdown-item">Products</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./products_lists.html" class="dropdown-item">List Of Products</a>
+                        </div>
                     </li>
-                    
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">CONTACT</a>
-                        </li>
-                
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
                 </ul>
+
                 <!-- ACCOUNT MODAL -->
                 <div class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-user-circle"></i> Account
-                    </a>
+                    <a role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user-circle fa-2x"></i> </a>
                 </div>
             </div>
         </div>
@@ -84,8 +87,7 @@
                                 <div class="col">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> <small class="text-muted">Remember
-                                                me</small></label>
+                                        <label class="form-check-label"> <small class="text-muted">Remember me</small></label>  
                                     </div>
                                     <input type="submit" value="Sign In" class="btn btn-info btn-block btn-md">
                                     <p class="text-center m-2">Not a member? <a class="text-info" href="#">Register</a>
@@ -126,8 +128,8 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block mb-5">
                             <h1 class="display-3 mb-0">EXPERT SERVICES</h1>
-                            <p class="lead">We know installations and services oil and gas instruments.<br/>
-                                From industrial projects to commercial applications, we can install it, repair it, or maintain it.</p>
+                            <p class="lead">We know installations. Services oil & gas instruments.<br/>
+                                From industrial projects to commercial applications. We can install it, repair it, or maintain it.</p>
                                 
                             <a href="services.html" class="btn btn-warning btn-lg"> Learn More... <i
                                     class="fa fa-long-arrow-right"></i></a>
@@ -139,11 +141,7 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block mb-5 text-left">
                             <h1 class="display-3 mb-0">ABOUT US</h1>
-                            <p class="lead">Through our network. A million-plus products in the palm of your hand. We
-                                can supply it.<br/>
-                                The Trusted Industrial & Commercial Supplier Since 1949. Shop Online Or Contact Us
-                                Today!
-                            </p>
+                            <p class="lead">Through our network. A million-plus products in the palm of your hand.We can supply it.</p>
                             <a href="contact.html" class="btn btn-info btn-lg">Contact Us</a>
                         </div>
                     </div>
@@ -280,7 +278,7 @@
                 </div>
             </div> 
             <div class="col mb-0 text-center">
-                <small class="text-light">Copyright &copy;<span id="year"></span>Anitech</small>
+                <small class="text-light">Copyright &copy;<span id="year"></span>Anitech 2021</small>
             </div>  
         </div>
     </footer>
