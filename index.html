@@ -243,7 +243,7 @@
             <div class="row">
                 <div class="col">
                     <h1 class="text-center mb-3">Featured Products</h1>
-                    <div class="logo-area slider">
+                    <div class="logo-area-products slider">
                         <div class="slide text-center mt-3"><img src="./img/PRODUCTS/TRIM SET.jpg" alt="Trim Set"/><a role="button" id="products-link" class="btn btn-link text-dark text-decoration-none mb-3 pt-0" href="">TRIM SET</a></div>
                         <div class="slide text-center mt-3"><img src="./img/PRODUCTS/Instrument.jpg" alt="Instrument"/><a role="button" id="products-link" class="btn btn-link text-dark text-decoration-none mb-3 pt-0" href="">INSTRUMENT</a></div>
                         <div class="slide text-center mt-3"><img src="./img/PRODUCTS/Seat_ring_retainer.jpg" alt="Retainer"/><a role="button" id="products-link" class="btn btn-link text-dark text-decoration-none mb-3 pt-0" href="">RETAINER</a></div>
@@ -290,46 +290,9 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-   
-
-
+    <script src="./script.js"></script>
         
-    <script>
-        $('.carousel').carousel({
-            interval: 4000,
-            pause: 'hover'
-        });
-
-        $(document).ready(function(){
-            $('.logo-area').slick({
-                slidesToShow: 6,
-                slidesToscroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1000,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                }, {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }]
-            });
-        })
-
-
-
-
-
-    </script>
-
-
+    
 </body>
 
 </html>

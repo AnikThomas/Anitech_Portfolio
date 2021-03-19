@@ -126,7 +126,7 @@
     <div class="container pt-4">
         <div class="row">
             <div class="col mb-5">
-                <div class="logo-area slider">
+                <div class="logo-area-lists slider">
                     <div class="slide text-center mt-3"><img src="./img/Brands/Abb.jpg" alt="Abb"/></div>
                     <div class="slide text-center mt-3"><img src="./img/Brands/fisher.png" alt="Fisher"/></div>
                     <div class="slide text-center mt-3"><img src="./img/Brands/keystone.png" alt="Keystone"/></div>
@@ -549,44 +549,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
    
-
-
-        
-    <script>
-        $('.carousel').carousel({
-            interval: 4000,
-            pause: 'hover'
-        });
-
-        $(document).ready(function(){
-            $('.logo-area').slick({
-                slidesToShow: 6,
-                slidesToscroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1000,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                }, {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }]
-            });
-        })
-
-
-
-
-
-
-    </script>
+<script src="./script.js"></script>
 
 
 </body>
