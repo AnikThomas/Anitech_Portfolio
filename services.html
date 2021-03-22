@@ -151,7 +151,7 @@
                         neque sint obcaecati atque officia quis deserunt, labore, omnis exercitationem est tenetur.
                         Placeat obcaecati dignissimos et, nemo laboriosam, error asperiores quia distinctio enim iure
                         doloribus!</p>
-                    <a href="about.html" class="btn btn-info btn-lg text-light mb-2">Learn More</a>
+                    <a href="about.html" class="btn btn-info text-light mb-2">Learn More</a>
                 </div>
             </div>
         </div>
@@ -159,30 +159,33 @@
 
     <!-- SERVICES FORM -->
     <div>
-        <h2 class="text-center mb-5">SERVICE REQUEST FORM</h2>
+        <h2 class="text-center mb-3 display-4 mt-4">SERVICE REQUEST FORM</h2>
+        <p class="lead mt-2 text-center ">WORK ORDER REQUEST</p>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="mb-5 col col-md-6  border rounded pl-3 pt-2" style="max-width: 600px;">
-                <h4 class="mb-3">Work Order Request</h4>
-                <form>
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-10 col-md-8 border rounded mb-5 bg-info" style="max-width: 800px;">
+                <div class="form text-light">
+                    <div class="form-group mt-2">
+                        <label for="Fullname">Fullname</label>
+                        <input type="text" id="firstname" class="form-control" placeholder="Enter Fullname" />
+                    </div>
                     <div class="form-group">
-                        <label for="Firstname">Firstname</label>
-                        <input type="text" id="firstname" class="form-control" placeholder="Enter firstname" />
+                        <label for="phone">Phone number</label>
+                        <input type="tel" class="form-control" name="telNum" placeholder="Enter Phone Number" />
                     </div>
                     <div class="form-group">
                         <label for="Email">Email address</label>
-                        <input type="email" id="email" class="form-control" placeholder="Enter email" />
+                        <input type="email" id="email" class="form-control" placeholder="Enter Email" />
                         <small class="form-text text-muted">example@example.com</small>
                     </div>
                     <div class="form-group">
                         <label for="company">Company</label>
-                        <input type="text" id="comapny" class="form-control" placeholder="Enter company name" />
+                        <input type="text" id="comapny" class="form-control" placeholder="Enter Company Name" />
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" class="form-control" placeholder="Enter password" />
+                        <input type="password" id="password" class="form-control" placeholder="Enter Password" />
                     </div>
 
                     <div class="custom-control custom-checkbox form-group">
@@ -190,32 +193,37 @@
                         <label for="rememberMe" class="custom-control-label">Remember me</label>
                     </div>
 
-            </div>
-            <div class="col col-md-6">
-                <h4 class="mb-2 ml-4">Problem Category:</h4>
-                <div class="custom-control custom-checkbox ml-4">
-                    <input type="checkbox" name="installation" id="installation" class="custom-control-input" />
-                    <label for="installation" class="custom-control-label">Installation</label>
-                </div>
+                    <div>
+                        <p class="lead mb-0">Problem Category:</h4>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="installation" id="installation" class="custom-control-input" />
+                            <label for="installation" class="custom-control-label">Installation</label>
+                        </div>
 
-                <div class="custom-control custom-checkbox ml-4">
-                    <input type="checkbox" name="repair" id="repair" class="custom-control-input" />
-                    <label for="repair" class="custom-control-label">Repair</label>
-                </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="repair" id="repair" class="custom-control-input" />
+                            <label for="repair" class="custom-control-label">Repair</label>
+                        </div>
 
-                <div class="custom-control custom-checkbox ml-4">
-                    <input type="checkbox" name="Other" id="Other" class="custom-control-input" />
-                    <label for="Other" class="custom-control-label">Other</label>
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" name="Other" id="Other" class="custom-control-input" />
+                            <label for="Other" class="custom-control-label">Other</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="problem"></label>
+                            <textarea class="form-control" id="problem" rows="10" placeholder="Message"></textarea>
+                        </div>
+
+                        </div>
+                            <button class="btn btn-light mb-4" type="submit">Submit</button>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="form-group">
-                    <label for="problem"></label>
-                    <textarea class="form-control" id="problem" rows="10"></textarea>
-                </div>
-                <button class="btn btn-info btn-lg" type="submit">Submit</button>
             </div>
-            </form>
         </div>
-
     </div>
 
 
