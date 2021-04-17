@@ -25,7 +25,10 @@
   background-position: center; }
 
 .carousel-image-3 {
-  background: url("/img/background_images/Dark_office.jpg"); }
+  background: url("/img/background_images/Dark_office.jpg"); 
+  background-size: cover;
+  background-position: center; 
+}
 
 .carousel-caption {
   background: rgba(0, 0, 0, 0.5); }
